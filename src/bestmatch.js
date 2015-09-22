@@ -1,5 +1,3 @@
-var SemiDemi = (function (SemiDemi) {
-
   // Find the best match of a useragent string against an array of SemiDemi Matcher structures.
   // Returns the best matching matcher, or null if no match can be found.
   // The Matcher structure is an array of objects, each of which has a single property.
@@ -9,37 +7,22 @@ var SemiDemi = (function (SemiDemi) {
   // disallowed: a string that must _not_ be present in the ua for it to match
   // version: a string prefix that will be followed by a version number. The version number will be ignored in matching.
   // The first element in the matcher can be an object with 'brand' and 'model' properties to be used as metadata.
-  SemiDemi.bestMatch = function (matchers, ua) {
-    var matching = filterMatching(matchers, ua);
-    if (matching.length === 1) {
-      return matching[0];
+  'use strict';
+const scorer = require('./scorer');
+const matcher = require('./matcher');
+
+module.exports = (ua) => (matches) => {
+    const fmatches = matches.filter(matcher(ua));
+    if (fmatches.length === 1) {
+      return fmatches[0];
     }
-    return findBestMatch(matching, ua);
-  };
+    return findBestMatch(ua, fmatches);
+};
 
-  var filterMatching = function (matchers, ua) {
-    var matching = [];
-    for (var i = 0; i < matchers.length; i++) {
-      if (SemiDemi.matches(matchers[i], ua)) {
-        matching.push(matchers[i]);
-      }
-    }
-    return matching;
-  }
+function findBestMatch(ua, matches) {
+    const scores = matches.map(scorer(ua));
+    const bestScore = Math.min.apply({}, scores);
+    const bestScoreIndex = scores.indexOf(bestScore);
 
-  var findBestMatch = function (matching, ua) {
-    var bestScore = Number.POSITIVE_INFINITY;
-    var bestMatch = null;
-    for (var i = 0; i < matching.length; i++) {
-      var score = SemiDemi.score(matching[i], ua);
-      if (score < bestScore) {
-        bestScore = score;
-        bestMatch = matching[i];
-      }
-    }
-    return bestMatch;
-  };
-
-  return SemiDemi;
-
-}) ( SemiDemi || {} );
+    return matches[bestScoreIndex];
+};

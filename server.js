@@ -1,27 +1,21 @@
-var express = require('express');
-var fs = require("fs");
+'use strict';
+const express = require('express');
+const fs = require('fs');
+const bestMatch = require('./src/bestmatch');
+const parser = require('./src/parser');
+const port = 7591;
+const matchers = parser(fs.readFileSync('./tvs.demi', 'utf8'));
 
-var app = express();
-
-var port = 7591;
-
-eval(fs.readFileSync('./src/parser.js', 'utf8'));
-eval(fs.readFileSync('./src/matcher.js', 'utf8'));
-eval(fs.readFileSync('./src/scorer.js', 'utf8'));
-eval(fs.readFileSync('./src/bestmatch.js', 'utf8'));
-
-var matchers = SemiDemi.parse(fs.readFileSync('./tvs.demi', 'utf8'));
-var normaliseDemiValue = function (v) {
+function normaliseDemiValue(v) {
   return v.toLowerCase().replace(/[^a-z0-9]/g, "_");
 }
 
-app.get('/', function (req, res) {
-  var uagent = req.query.ua || req.headers['user-agent'] || '';
-  var result = SemiDemi.bestMatch(matchers, uagent);
-  if (!result) { result = [{ brand:"generic", model:"smarttv" }] }
-  res.send(JSON.stringify(result[0]));
+let app = express();
+
+app.get('/', (req, res) => {
+  const uagent = req.query.ua || req.headers['user-agent'] || '';
+  const result = bestMatch(uagent)(matchers) || [{ brand:'generic', model:'smarttv' }];
+  res.json(result[0]);
 });
 
-app.listen(port, function() {
-  console.log('running on port: ' +port);
-});
+app.listen(port, () => console.log('running on port: ' + port));
