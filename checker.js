@@ -68,7 +68,7 @@ function testUA (ua, idx, done) {
 }
 
 function runTests (uas) {
-  var start = 1700; //0;
+  var start = 0; //0;
   var lines = uas.split(/[\r\n]+/);
   console.log("Num UAs: " + lines.length);
   var end = lines.length;
