@@ -30,6 +30,7 @@ module.exports = (ua) => (matcher)=> {
 
 //buildNormalisationRegEx :: String -> RegExp
 function buildNormalisationRegEx(prefix) {
+    //TODO: Can this be improved/is it necessary?
     const normalised = prefix.replace(/\\/g, "\\\\")
                             .replace(/\*/g, "\\*")
                             .replace(/\./g, "\\.")

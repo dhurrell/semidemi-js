@@ -1,10 +1,7 @@
 var http = require('http');
 var fs = require('fs');
-
-eval(fs.readFileSync('./src/parser.js', 'utf8'));
-eval(fs.readFileSync('./src/matcher.js', 'utf8'));
-eval(fs.readFileSync('./src/scorer.js', 'utf8'));
-eval(fs.readFileSync('./src/bestmatch.js', 'utf8'));
+const bestmatcher = require('./src/bestmatch');
+const parser = require('./src/parser');
 
 console.log("SemiDemi Checker");
 
@@ -23,13 +20,13 @@ function downloadFile (options, succ, err) {
 }
 
 
-var matchers = SemiDemi.parse(fs.readFileSync('./tvs.demi', 'utf8'));
+var matchers = parser(fs.readFileSync('./tvs.demi', 'utf8'));
 var normaliseDemiValue = function (v) {
   return v.toLowerCase().replace(/[^a-z0-9]/g, "_");
 }
 
 function semidemi (ua) {
-  var result = SemiDemi.bestMatch(matchers, ua);
+  var result = bestmatcher(ua)(matchers);
   if (!result) { return; }
   return result[0].brand+"-"+result[0].model;
 }
@@ -71,10 +68,11 @@ function testUA (ua, idx, done) {
 }
 
 function runTests (uas) {
-  var start = 270;//process.argv[2] || 0;
-  var end = 275;//process.argv[3] || lines.length;
+  var start = 1700; //0;
   var lines = uas.split(/[\r\n]+/);
   console.log("Num UAs: " + lines.length);
+  var end = lines.length;
+
   var i = 0;
   var doNextTest = function () {
     var next = function () {
@@ -93,6 +91,5 @@ function runTests (uas) {
   };
   doNextTest();
 }
-
 
 runTests(fs.readFileSync('testdata/checker_uas.txt', 'utf8'));

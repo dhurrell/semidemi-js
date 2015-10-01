@@ -18,4 +18,4 @@ app.get('/', (req, res) => {
   res.json(result[0]);
 });
 
-app.listen(port, () => console.log('running on port: ' + port));
+app.listen(port, () => console.log(`running on port: ${port}`));

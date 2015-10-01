@@ -7,53 +7,76 @@ module.exports = (input) => {
         .map(parseMatcher);
 };
 
-const topRegex = /\s*([^\s]+)\s+([^:\s]+)\s*:\s*(.*)/;
-function parseMatcher(line, lineNum) {
-    var sections = line.match(topRegex);
-    if (!sections) { throw "Syntax Error at top level (brand model:matcher) on line "+lineNum; }
-    var brand = sections[1];
-    var model = sections[2];
-    var result = [ { brand: brand, model: model } ];
-    var matcher = sections[3];
-    var hasInvariant = false;
-    var type;
-    while (matcher !== "") {
-        // Look for start of marked up section
-        var i = matcher.indexOf("[");
-        if (i === -1) {
-            // No marked up sections remaining
-            result.push({ fuzzy: matcher });
-            break;
-        } else if (i > 0) {
-            // Add the fuzzy before the marked up section
-            result.push({ fuzzy: matcher.substr(0, i) });
-        }
-        type = matcher.substr(i+1, 1);
-        matcher = matcher.substr(i);
-        // Look for end of marked up section
-        i = matcher.indexOf("]");
-        if (i === -1) {
-            throw "Syntax Error: Unterminated '[' on line "+lineNum;
-        } else if (type === "+") {
-            result.push({ invariant: matcher.substr(2, i-2) });
-            hasInvariant = true;
-        } else if (type === "-") {
-            result.push({ disallowed: matcher.substr(2, i-2) });
-        } else if (type === "v") {
-            result.push({ version: trimFromEnd(matcher.substr(2, i-2), /[0-9\-_\.]/) });
-        } else {
-            throw "Syntax Error: Invalid markup '["+type+"...]' on line "+lineNum;
-        }
-        matcher = matcher.substr(i+1);
+//TODO:
+//Can the line be split up into sections beforeprocessing it?
+//If it can, then this really should be a reduce.
+//If not, does this version of node have tail-call ellimination? ...apparently no
+//might be best to swap back to loop if it doesn't
+function parseLine(matcher, resultHolder, lineNum) {
+    // Look for start of marked up section
+    const iBegin = matcher.indexOf("[");
+
+    if (iBegin === -1) {
+        // No marked up sections remaining
+        resultHolder.result.push({ fuzzy: matcher });
+        return resultHolder;
+    } else if (iBegin > 0) {
+        // Add the fuzzy before the marked up section
+        resultHolder.result.push({ fuzzy: matcher.substr(0, iBegin) });
     }
 
-    if (!hasInvariant) { console.log(line);throw "Error: Matcher has no invariants on line "+lineNum; }
-    return result;
+    // Look for end of marked up section
+    const type = matcher[iBegin+1];
+    matcher = matcher.substr(iBegin);
+    const iEnd = matcher.indexOf("]");
+
+    if (iEnd === -1) { throw Error(`Syntax Error: Unterminated '[' on line ${lineNum}`); }
+
+    const markedUpSection = matcher.substr(2, iEnd-2);
+
+    if (type === "+") {
+        resultHolder.result.push({ invariant: markedUpSection});
+        resultHolder.hasInvariant = true;
+    } else if (type === "-") {
+        resultHolder.result.push({ disallowed: markedUpSection });
+    } else if (type === "v") {
+        resultHolder.result.push({ version: trimFromEnd(markedUpSection, /[0-9\-_\.]/) });
+    } else {
+        throw Error(`Syntax Error: Invalid markup '[${type}...]' on line ${lineNum}`);
+    }
+
+    const nextMatcher = matcher.substr(iEnd+1);
+
+    if(nextMatcher === "") {
+        return resultHolder;
+    } else {
+        return parseLine(nextMatcher, resultHolder, lineNum);
+    }
+}
+
+function parseMatcher(line, lineNum) {
+
+    const topRegex = /\s*([^\s]+)\s+([^:\s]+)\s*:\s*(.*)/;
+
+    const sections = line.match(topRegex);
+    if (!sections) { throw Error(`Syntax Error at top level (brand model:matcher) on line ${lineNum}`); }
+    const brand = sections[1];
+    const model = sections[2];
+    const matcher = sections[3];
+    const result = [ { brand, model } ];
+    const hasInvariant = false;
+
+    const resultHolder = parseLine(matcher, {result, hasInvariant}, lineNum);
+
+    if (!resultHolder.hasInvariant) {throw Error(`Error: Matcher has no invariants on line ${lineNum}`); }
+    return resultHolder.result;
 };
 
+//TODO:
+//Another possible split then reduce?
 function trimFromEnd(value, toTrim) {
-    while (value[value.length-1].match(toTrim)) { value = value.substr(0, value.length-1); }
-    return value;
+    if(!value[value.length-1].match(toTrim)) {return value; }
+    else {return trimFromEnd(value.substr(0, value.length-1), toTrim);}
 };
 
 function isNotEmptyLine(line) {

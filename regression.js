@@ -1,10 +1,9 @@
 var http = require('http');
 var fs = require('fs');
+const bestmatcher = require('./src/bestmatch');
+const parser = require('./src/parser');
 
-eval(fs.readFileSync('./src/parser.js', 'utf8'));
-eval(fs.readFileSync('./src/matcher.js', 'utf8'));
-eval(fs.readFileSync('./src/scorer.js', 'utf8'));
-eval(fs.readFileSync('./src/bestmatch.js', 'utf8'));
+
 
 console.log("SemiDemi Regression Tests");
 
@@ -12,14 +11,14 @@ console.log("SemiDemi Regression Tests");
 // Run checker script and update matchers if required (may need ability to run it 'in sections'...)
 
 
-var matchers = SemiDemi.parse(fs.readFileSync('./tvs.demi', 'utf8'));
+var matchers = parser(fs.readFileSync('./tvs.demi', 'utf8'));
 var normaliseDemiValue = function (v) {
   return v.toLowerCase().replace(/[^a-z0-9]/g, "_");
 }
 
 var runTest = function (testdata) {
   var expected = normaliseDemiValue(testdata.brand) + "-" + normaliseDemiValue(testdata.model);
-  var result = SemiDemi.bestMatch(matchers, testdata.uagent);
+  var result = bestmatcher(testdata.uagent)(matchers);
 
   if (!result) {
     if (expected === "generic-smarttv") {
@@ -56,5 +55,5 @@ function runTests (tests) {
   console.log("Finished");
 }
 
-
-runTests(JSON.parse(fs.readFileSync('testdata/testdata.json', 'utf8')));
+var testData = require('./testdata/testdata.json');
+runTests(testData);
