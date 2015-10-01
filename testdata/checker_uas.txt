@@ -189,12 +189,6 @@ BBCSilverlight/0.1 (Xbox; OS 2.0.1888.0  Silverlight 4.0.338.9242) BBCiPlayer/1.
 HbbTV/1.1.1 (; CUS:BUSH; MB90; 1.0.9; 1.0;) LOH; Opera; CE-HTML/1.0 NetFront/4.1 NETRANGEMMH iplayerV3
 HbbTV/1.1.1 (; CUS:DIGIHOME; MB90; 1.0.3; 1.0;) LOH; Opera; CE-HTML/1.0 NetFront/4.1 NETRANGEMMH iplayerV3
 HbbTV/1.2.1 (;Philips;MT5591;PhilipsTV, 3.1.1;;) ANTGalio/3.4.0.27.00.devel
-http://www.bbc.co.uk/iplayer/#tv/playback/b04wjsf6
-Mozilla/4.0 (compatible; NativeHost)
-Mozilla/4.0 (compatible; NativeHost), BBCSilverlight/0.1 (Xbox; OS 2.0.1888.0  Silverlight 4.0.338.9242) BBCiPlayer/1.3.0.29357
-Mozilla/4.0 (compatible; NativeHost), BBCSilverlight/0.1 (Xbox; OS 2.0.1888.0  Silverlight 4.0.338.9242) BBCiPlayer/1.3.0.6
-Mozilla/4.0 (compatible; NativeHost), BBCSilverlight/0.1 (Xbox; OS 2.0.1888.0 Silverlight 4.0.338.9242) BBCiPlayer/1.3.0.6
-Mozilla/5.0
 Mozilla/5.0 (; U; Linux SH4; en) AppleWebkit/534.1 (KHTML, like Gecko) HbbTV/1.1.1 (;GMI-SS-Browser- 3.0; mB/7108;1.0.0;1.00;)
 Mozilla/5.0 (avdn/bt_cardinal.stb.2011; avkb/pc,B:1572866; avvp/ssl; avui/tv; avrt/cehtml; avst/off; Windows; U; Windows NT 5.1; en-GB; rv:1.8.1.13) CE-HTML/1.0 BT-Cardinal-G2256/4.64.9
 Mozilla/5.0 (avdn/bt_cardinal.stb.2011; avkb/pc,B:1572866; avvp/ssl; avui/tv; avrt/cehtml; avst/off; Windows; U; Windows NT 5.1; en-GB; rv:1.8.1.13) CE-HTML/1.0 BT-Cardinal-G2256/4.65.4
@@ -244,14 +238,6 @@ Mozilla/5.0 (compatible; ANTGalio/3.2.0; Linux2.6.32.16/sh4; GV101YRH)
 Mozilla/5.0 (compatible; ANTGalio/3.2.0; Linux2.6.32.16/sh4; GV102ZRH)
 Mozilla/5.0 (compatible; ANTGalio/3.2.0; Linux2.6.32.16/sh4; VV107ZRH)
 Mozilla/5.0 (compatible; ANTGalio/3.2.0; Linux2.6.32.16/sh4; VW11FVRHD)
-Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0; MSAppHost/1.0)
-Mozilla/5.0 (CrKey armv7l 1.4.15098) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.0 Safari/537.36
-Mozilla/5.0 (CrKey armv7l 1.5.16041) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.0 Safari/537.36
-Mozilla/5.0 (CrKey armv7l 1.5.16278) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.0 Safari/537.36
-Mozilla/5.0 (CrKey armv7l 1.6.16664) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.0 Safari/537.36
-Mozilla/5.0 (CrKey armv7l 1.7.16730) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.0 Safari/537.36
-Mozilla/5.0 (CrKey armv7l 1.7.17250) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.0 Safari/537.36
-Mozilla/5.0 (CrKey armv7l 1.8.17977) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.0 Safari/537.36
 Mozilla/5.0 (DirectFB; Linux armv7l) AppleWebKit/534.26  (KHTML, like Gecko) Version/5.0 Safari/534.26  avdn/LG.Media-2010 avui/tv avvp/ssl avkb/mcr,B:461 avrt/html4 avst/off LG Browser/5.00.00( 3D BDP; LGE; Media/BH9540; 4617; abc;); LG NetCast.Media-2012 /4617 (LG, Media/BH9540, wired)
 Mozilla/5.0 (DirectFB; Linux armv7l) AppleWebKit/534.26  (KHTML, like Gecko) Version/5.0 Safari/534.26  avdn/LG.Media-2010 avui/tv avvp/ssl avkb/mcr,B:461 avrt/html4 avst/off LG Browser/5.00.00( 3D BDP; LGE; Media/BH9540; 4617; abc;); LG NetCast.Media-2012 /4617 (LG, Media/BH9540, wireless)
 Mozilla/5.0 (DirectFB; Linux armv7l) AppleWebKit/534.26  (KHTML, like Gecko) Version/5.0 Safari/534.26  avdn/LG.Media-2010 avui/tv avvp/ssl avkb/mcr,B:461 avrt/html4 avst/off LG Browser/5.00.00( 3D BDP; LGE; Media/BH9540; 5033; abc;); LG NetCast.Media-2012 /5033 (LG, Media/BH9540, wired)
@@ -1491,24 +1477,6 @@ Mozilla/5.0 (Linux armv7l; (BDPlayer; BDP7G/1.0; like Gecko; Opera/10.30)(avdn/s
 Mozilla/5.0 (Linux armv7l; (BDPlayer; BDP7G/1.0; like Gecko; Opera/10.30)(avdn/sony.bdp.2012;avui/tv;avrt/html5;avvp/ssl;avst/on;avkb/mc,B:27)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36 OPR/22.0.1481.0 OMI/4.2.12.48.ALSAN3.32
 Mozilla/5.0 (Linux armv7l; Panasonic.bd3d.2013; Mediatek) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36 OPR/22.0.1481.0 OMI/4.2.12.48.ALSAN3.12
 Mozilla/5.0 (Linux MIPS; U; EN-GB) AppleWebKit/537.4 (KHTML, like Gecko) HBBTV/1.1.1 ManhattanMS/1.0 (HDT2)
-Mozilla/5.0 (Linux; Android 4.3; Nexus Player Build/LMX51C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.0 Safari/537.36 CrKey/22736
-Mozilla/5.0 (Linux; Android 4.3; Nexus Player Build/LMX51C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.0 Safari/537.36 CrKey/22853
-Mozilla/5.0 (Linux; Android 4.3; Nexus Player Build/LMX63) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.0 Safari/537.36 CrKey/22853
-Mozilla/5.0 (Linux; Android 4.3; Nexus Player Build/LMX65E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.0 Safari/537.36 CrKey/22736
-Mozilla/5.0 (Linux; Android 4.3; Nexus Player Build/LMX65F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.0 Safari/537.36 CrKey/22736
-Mozilla/5.0 (Linux; Android 4.3; Nexus Player Build/LMX65F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.0 Safari/537.36 CrKey/22853
-Mozilla/5.0 (Linux; Android 4.4.2; NEO-X5-116A Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.0 Safari/537.36 CrKey/20676
-Mozilla/5.0 (Linux; Android 4.4.2; Nexus 10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.0 Safari/537.36 CrKey/20676
-Mozilla/5.0 (Linux; Android 4.4.99; Nexus Player Build/LMX63) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.51 Safari/537.36 CrKey/local.derekjchow
-Mozilla/5.0 (Linux; Android 4.4.99; Nexus Player Build/LMX64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.51 Safari/537.36 CrKey/23970
-Mozilla/5.0 (Linux; Android 4.4.99; Nexus Player Build/LMX64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.51 Safari/537.36 CrKey/24417
-Mozilla/5.0 (Linux; Android 4.4.99; Nexus Player Build/LMX64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.51 Safari/537.36 CrKey/24467
-Mozilla/5.0 (Linux; Android 5.0.2; Nexus 7 Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.0 Safari/537.36 CrKey/20676
-Mozilla/5.0 (Linux; Android 5.0; ADT-1 Build/LPX13D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.0 Safari/537.36 CrKey/20676
-Mozilla/5.0 (Linux; Android 5.1; ADT-1 Build/LMX72F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.0 Safari/537.36 CrKey/22736
-Mozilla/5.0 (Linux; Android 5.1; Nexus Player Build/LMX70) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.0 Safari/537.36 CrKey/22736
-Mozilla/5.0 (Linux; Android 5.1; Nexus Player Build/LMX72I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.51 Safari/537.36 CrKey/24750
-Mozilla/5.0 (Linux; Android 5.1; Nexus Player Build/LMX72K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.51 Safari/537.36 CrKey/24750
 Mozilla/5.0 (Linux; U; %LANG) AppleWebKit/537.4 (KHTML, like Gecko) HbbTV/1.1.1 (;TOSHIBA;MWB;;;) TOSHIBA-DTV-2014A (%1; %2; 2014A; EU)
 Mozilla/5.0 (Linux; U; bg-BG) AppleWebKit/537.4(KHTML, like Gecko) HbbTV/1.1.1(;TOSHIBA;MWB;;;) TOSHIBA-2013A-L4/L6/L7/L9
 Mozilla/5.0 (Linux; U; cs-CZ) AppleWebKit/537.4 (KHTML, like Gecko) HbbTV/1.1.1 (;TOSHIBA;MWB;;;) TOSHIBA-DTV-2014A (DTV_L7453; 8.1.70.04.01.1; 2014A; EU)
@@ -1573,33 +1541,6 @@ Mozilla/5.0 (Linux; U; sk-SK) AppleWebKit/537.4 (KHTML, like Gecko) HbbTV/1.1.1 
 Mozilla/5.0 (Linux; U; sk-SK) AppleWebKit/537.4 (KHTML, like Gecko) HbbTV/1.1.1 (;TOSHIBA;MWB;;;) TOSHIBA-DTV-2014A (DTV_L7453; 8.1.88.07.01.1; 2014A; EU)
 Mozilla/5.0 (Linux; U; sl-SL) AppleWebKit/537.4(KHTML, like Gecko) HbbTV/1.1.1(;TOSHIBA;MWB;;;) TOSHIBA-2013A-L4/L6/L7/L9
 Mozilla/5.0 (Linux; U; uk-UA) AppleWebKit/537.4(KHTML, like Gecko) HbbTV/1.1.1(;TOSHIBA;MWB;;;) TOSHIBA-2013A-L4/L6/L7/L9
-Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:17.0) Gecko/20100101 Firefox/17.0
-Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:33.0) Gecko/20100101 Firefox/33.0
-Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:34.0) Gecko/20100101 Firefox/34.0
-Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:33.0) Gecko/20100101 Firefox/33.0
-Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:34.0) Gecko/20100101 Firefox/34.0
-Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:26.0) Gecko/20100101 Firefox/26.0
-Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:33.0) Gecko/20100101 Firefox/33.0
-Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:34.0) Gecko/20100101 Firefox/34.0
-Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36
-Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36
-Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36
-Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2243.2 Safari/537.36
-Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.59.10 (KHTML, like Gecko) Version/5.1.9 Safari/534.59.10
-Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36
-Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36
-Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2243.2 Safari/537.36 Opera/9.80 (Linux i686; HbbTV/1.1.1 ( PVR DRM; BANGOLUFSEN; A3; ; ; ) CE-HTML/1.0 NETTV/4.3.9) Presto/2.12.407 Version/12.50 A3/1.0.7.36015 (BANGOLUFSEN, A3, wired)
-Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36
-Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.78.2 (KHTML, like Gecko) Version/6.1.6 Safari/537.78.2
-Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/536.30.1 (KHTML, like Gecko) Version/6.0.5 Safari/536.30.1
-Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.122 Safari/537.36
-Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36
-Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36
-Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36
-Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/600.1.17 (KHTML, like Gecko) Version/6.2 Safari/537.85.10
-Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36
-Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36
-Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36
 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.78.2 (KHTML, like Gecko) Version/7.0.6 Safari/537.78.2
 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/600.2.5 (KHTML, like Gecko) Version/7.1.2 Safari/537.85.11
 Mozilla/5.0 (Nintendo WiiU) AppleWebKit/534.53 (KHTML, like Gecko) NWF/1.7.2.35506.USA
@@ -1717,7 +1658,7 @@ Mozilla/5.0 (PlayStation 4) AppleWebKit/531.3 (KHTML, like Gecko) SCEE/1.0 Nuant
 Mozilla/5.0 (PlayStation 4) AppleWebKit/531.3 (KHTML, like Gecko) SCEE/1.0 Nuanti/2.0 BMID/E679EBE1A9
 Mozilla/5.0 (PlayStation 4) AppleWebKit/531.3 (KHTML, like Gecko) SCEE/1.0 Nuanti/2.0 BMID/E679EBE960
 Mozilla/5.0 (PlayStation 4) AppleWebKit/531.3 (KHTML, like Gecko) SCEE/1.0 Nuanti/2.0 BMID/E67ADC8B3D
-Mozilla/5.0 (SmartHub; SMART-TV; U; Linux/SmartTV 2013; Maple2012) AppleWebKit/535.20  (KHTML, like Gecko) SmartTV Safari/535.20 
+Mozilla/5.0 (SmartHub; SMART-TV; U; Linux/SmartTV 2013; Maple2012) AppleWebKit/535.20  (KHTML, like Gecko) SmartTV Safari/535.20
 Mozilla/5.0 (SmartHub; SMART-TV; U; Linux/SmartTV 2013; Maple2012) AppleWebKit/535.20  (KHTML, like Gecko) SmartTV Safari/535.20  Brand=Samsung Platform=FoxB Model=BD-F5900
 Mozilla/5.0 (SmartHub; SMART-TV; U; Linux/SmartTV 2013; Maple2012) AppleWebKit/535.20  (KHTML, like Gecko) SmartTV Safari/535.20  Brand=Samsung Platform=FoxB Model=BD-F6500
 Mozilla/5.0 (SmartHub; SMART-TV; U; Linux/SmartTV 2013; Maple2012) AppleWebKit/535.20  (KHTML, like Gecko) SmartTV Safari/535.20  Brand=Samsung Platform=FoxB Model=BD-F6500 BMID/E67A255443
@@ -1815,7 +1756,6 @@ Mozilla/5.0 (SmartHub; SMART-TV; U; Linux/SmartTV 2013; Maple2012) AppleWebKit/5
 Mozilla/5.0 (SmartHub; SMART-TV; U; Linux/SmartTV 2013; Maple2012) AppleWebKit/535.20  (KHTML, like Gecko) SmartTV Safari/535.20  Series=Brand=Samsung Platform=FOXB Model=HT-F9750W
 Mozilla/5.0 (SmartHub; SMART-TV; U; Linux/SmartTV 2013; Maple2012) AppleWebKit/535.20  (KHTML, like Gecko) SmartTV Safari/535.20  Series=Brand=Samsung Platform=FOXB Model=HT-FM53C
 Mozilla/5.0 (SmartHub; SMART-TV; U; Linux/SmartTV 2013; Maple2012) AppleWebKit/535.20  (KHTML, like Gecko) SmartTV Safari/535.20  Series=Brand=Samsung Platform=FOXB Model=HT-FS6200
-Mozilla/5.0 (SmartHub; SMART-TV; U; Linux/SmartTV 2014; Maple2012) AppleWebKit/537.42  (KHTML, like
 Mozilla/5.0 (SmartHub; SMART-TV; U; Linux/SmartTV 2014; Maple2012) AppleWebKit/537.42  (KHTML, like Gecko) SmartTV Safari/537.42  Brand=Samsung Platform=FoxB Model=BD-H6500
 Mozilla/5.0 (SmartHub; SMART-TV; U; Linux/SmartTV 2014; Maple2012) AppleWebKit/537.42  (KHTML, like Gecko) SmartTV Safari/537.42  Brand=Samsung Platform=FoxB Model=BD-H8500
 Mozilla/5.0 (SmartHub; SMART-TV; U; Linux/SmartTV 2014; Maple2012) AppleWebKit/537.42  (KHTML, like Gecko) SmartTV Safari/537.42  Brand=Samsung Platform=FoxB Model=BD-H8900
@@ -7307,7 +7247,7 @@ YouViewHTML/1.0 AppleWebKit/537.21  (Humax; DTRT2100; 84B08502; CDS/21.4.2; API/
 YouViewHTML/1.0 AppleWebKit/537.21  (Humax; DTRT2100; 84B08502; CDS/21.5.0; API/2.9.2; PS/2.9.8) ( DVR FLASH HTML MHEG IPCMC)
 YouViewHTML/1.0 AppleWebKit/537.21  (Humax; DTRT2100; 84B08532; CDS/21.3.0; API/2.9.0; PS/2.9.4) ( DVR FLASH HTML MHEG IPCMC)
 YouViewHTML/1.0 AppleWebKit/537.21  (Humax; DTRT2110; 84B08530; CDS/20.5.0; API/2.8.1; PS/2.8.16) ( DVR FLASH HTML MHEG IPCMC)
-YouViewHTML/1.0 AppleWebKit/537.21  (Humax; DTRT2110; 84B08530; CDS/20.9.0; API/2.8.1; PS/2.8.18) ( 
+YouViewHTML/1.0 AppleWebKit/537.21  (Humax; DTRT2110; 84B08530; CDS/20.9.0; API/2.8.1; PS/2.8.18) (
 YouViewHTML/1.0 AppleWebKit/537.21  (Humax; DTRT2110; 84B08530; CDS/20.9.0; API/2.8.1; PS/2.8.18) ( DVR FLASH HTML MHEG IPCMC)
 YouViewHTML/1.0 AppleWebKit/537.21  (Humax; DTRT2120; 84B08520; CDS/20.9.0; API/2.8.1; PS/2.8.18) ( DVR FLASH HTML MHEG IPCMC)
 YouViewHTML/1.0 AppleWebKit/537.21  (Humax; DTRT4000; 80B07001; CDS/21.5.0; API/2.9.2; PS/2.9.8) ( DVR FLASH HTML MHEG IPCMC)
