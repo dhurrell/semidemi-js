@@ -54,7 +54,7 @@ function demi (ua, succ, err) {
 function testUA (ua, idx, done) {
   demi(ua, function (demi) {
     if (semidemi(ua) === demi) {
-      process.stdout.write(".");
+      process.stdout.write("✓");
     } else {
       process.stdout.write("x");
       console.log("\n"+idx+": FAILED: " + ua + "\nSemiDemi:  " + semidemi(ua) + "\nDemi    : " + demi);
@@ -68,10 +68,12 @@ function testUA (ua, idx, done) {
 }
 
 function runTests (uas) {
-  var start = 0; //0;
+  var args = process.argv.slice(2);
+
+  var start = args[1] || 0;
   var lines = uas.split(/[\r\n]+/);
   console.log("Num UAs: " + lines.length);
-  var end = lines.length;
+  var end = args[2] || lines.length;
 
   var i = 0;
   var doNextTest = function () {

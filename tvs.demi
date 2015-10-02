@@ -237,7 +237,8 @@ lg tv_2013_midrange: LG Browser/6.00.00(+ TV set capa; sw version, [+LM960V-Z] ;
 lg tv_2013_midrange: [+LGE] [+24MT30S][+-PZQ] [+LG NetCast.TV-2013]
 lg tv_2013_midrange: [+LGE; 27MT93V-PZQ] [+LG NetCast.TV-2013]
 lg tv_2013_midrange: [+LGE; 28LB491U-ZB] [+LG NetCast.TV-2013]
-lg tv_2012_midrange: [+LGE; 50PH660V-ZB] [+LG NetCast.TV-2013]
+lg tv_2013_midrange: [+LGE; 50PH660V-ZB] [+LG NetCast.TV-2013]
+lg tv_2013_midrange: [+LGE; 55LA667V-ZA] [+LG NetCast.TV-2013]
 
 lg tv_2013_highend: [+LGE; 42LA790V-Z] [+LG NetCast.TV-2013]
 lg tv_2013_highend: [+LGE] [+790V-ZA] [+LG NetCast.TV-2013]
@@ -270,6 +271,10 @@ lg tv_2013_highend: [+LGE] [+70W-ZB] [+LG NetCast.TV-2013]
 lg tv_2013_highend: [+LGE] [+70W-ZE] [+LG NetCast.TV-2013]
 lg tv_2013_highend: [+LGE] [+70W-ZZ] [+LG NetCast.TV-2013]
 lg tv_2013_highend: [+LGE] 55EA[+870V-ZA] [+LG NetCast.TV-2013]
+lg tv_2013_highend: [+LGE; 55EA880V-ZC] [+LG NetCast.TV-2013]
+lg tv_2013_highend: [+LGE; 55EA880W-ZC] [+LG NetCast.TV-2013]
+lg tv_2013_highend: [+LGE; 55LA965W-ZA] [+LG NetCast.TV-2013]
+lg tv_2013_highend: [+LGE; 65LA965W-ZA] [+LG NetCast.TV-2013]
 
 # 2014
 lg bdp_2014_highend: [+BDP; LGE; Media/BP740] [+(LG, Media/BP740, wireless)]
