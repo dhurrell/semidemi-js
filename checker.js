@@ -58,6 +58,7 @@ function testUA (ua, idx, done) {
     } else {
       process.stdout.write("x");
       console.log("\n"+idx+": FAILED: " + ua + "\nSemiDemi:  " + semidemi(ua) + "\nDemi    : " + demi);
+      process.exit();
     }
     done();
   }, function (err) {
