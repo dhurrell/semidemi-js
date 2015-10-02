@@ -70,10 +70,10 @@ function testUA (ua, idx, done) {
 function runTests (uas) {
   var args = process.argv.slice(2);
 
-  var start = args[1] || 0;
+  var start = args[0] || 0;
   var lines = uas.split(/[\r\n]+/);
   console.log("Num UAs: " + lines.length);
-  var end = args[2] || lines.length;
+  var end = args[1] || lines.length;
 
   var i = 0;
   var doNextTest = function () {
