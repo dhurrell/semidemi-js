@@ -97,9 +97,7 @@ humax pvr_2015: Opera/9.80 (Linux mips; HbbTV/1.2.1 (PVR; [+Humax]; [+hdr1000t];
 # 2010
 
 lg netcast_media_2010: [+LG.Media-2010] [+Media/BD5]72 [+LG NetCast.Media-201]0
-lg netcast_tv_2010: Mozilla/5.0 (DirectFB; U; Linux mips; en) AppleWebKit/531.2+ (KHTML, like Gecko), Safari/531.2+ avdn/LG.TV-2010 avui/tv avvp/ssl avkb/mcr,B:461 avrt/html4 avst/off LG Browser/4.0.10(+mouse+PORTAL_KEY+SCREEN+TUNER; LGE; [+GLOBAL-PLAT2]; 03.01.00; 0x00000001;); [+LG NetCast.TV-2010]
-lg netcast_tv_2010: [+LG NetCast.TV-2010]
-
+lg netcast_tv_2010: [+LG NetCast.TV-2010] [-TV-2011]
 
 # 2011
 
@@ -118,7 +116,8 @@ lg netcast_media_2011: [+LGE; Media/ST600; ST.8.79.207.F;] [+LG NetCast.Media-20
 lg netcast_media_2011: [+LGE; Media/BH9540] [+LG NetCast.Media-2011]
 lg netcast_media_2011: [+LGE; Media/BH9540] [+LG NetCast.Media-2011]
 lg netcast_media_2011: [+LG NetCast.Media-2011]
-lg netcast_tv_2011: [+avdn/LG.TV-2011] [+LGE] [+GLOBAL-PLAT2][+LG NetCast.TV-2010]
+
+lg netcast_tv_2011: [+avdn/LG.TV-2011] [+LGE] [+LG NetCast.TV-2010]
 
 lg st600: [+LG.Media-2010] [+LGE;] [+Media/ST600][+LG NetCast.Media-2011]
 
@@ -133,9 +132,12 @@ lg mtk_tv_2012: Mozilla/5.0 (DirectFB; Linux armv7l) AppleWebKit/534.26+ (KHTML,
 lg bluray_2012: Mozilla/5.0 (DirectFB; Linux armv7l) avdn/LG Media/BH9520 BLURAY DUMMY [+LG UA] MATCHED IN BBC-WURFL LGTVMATCHER.JAVA
 lg bluray_2012: [+LGE] [+Media/BH]9520 [+LG NetCast.Media-2012]
 lg bluray_2012: [+LGE] [+Media/BH]9520 [+LG NetCast.TV-2012]
+lg bluray_2012: [+LGE] [+Media/BP]520 [+LG NetCast.TV-2012]
 lg bluray_2012: [+LG.Media-2010] LGE; [+Media/B] [-BD670] [-BD660] [-BH6340] [-BH9540] [+LG NetCast.Media-2011]
 
 lg tv_2012: [+LG NetCast.TV-2012]
+lg tv_2012: [+42LE7500-ZA] [+LG NetCast.TV-2011]
+
 
 lg tv_2012_derivative_models: Mozilla/5.0 (DirectFB; Linux armv7l) AppleWebKit/534.26+ (KHTML, like Gecko) Version/5.0 Safari/534.26+ LG Browser/5.0.00(+mouse+3D+SCREEN+TUNER; LGE; [+GLOBAL-PLAT4]; 09.00.00; 0x00000001;); [+LG NetCast.TV-2012]
 lg tv_2012_derivative_models: Mozilla/5.0 (DirectFB; Linux armv7l) AppleWebKit/534.26+ (KHTML, like Gecko) Version/5.0 Safari/534.26+ LG Browser/5.00.00(+mouse+3D+SCREEN+TUNER; LGE; [+DERVATIVE_MODEL_UA]; 09.00.07; 0x00000001;); [+LG NetCast.TV-2012]
@@ -160,6 +162,7 @@ lg tv_2012_highend: [+LGE; 55LM860V] [+LG NetCast.TV-2012]
 lg tv_2012_highend: [+LGE; 55LM960S] [+LG NetCast.TV-2012]
 lg tv_2012_highend: [+LGE; 72LM950V-ZA] [+LG NetCast.TV-2012]
 lg tv_2012_highend: [+LGE; 84LM960V-ZB] [+LG NetCast.TV-2012]
+lg tv_2012_highend: [+LGE; 84LM960V-ZA] [+LG NetCast.TV-2012]
 
 lg tv_2012_midrange: Mozilla/5.0 (DirectFB; Linux armv7l) avdn/LG 55LM760T-ZB [+MIDRANGE] DUMMY [+LG UA] MATCHED IN BBC-WURFL LGTVMATCHER.JAVA
 lg tv_2012_midrange: [+LGE; 47LM640S-ZA] [+LG NetCast.TV-2012]
@@ -183,6 +186,8 @@ lg tv_2012_derivative_models: [+LGE; 60PA660S-ZF] [+LG NetCast.TV-2012]
 # 2013
 
 lg bluray_3d_broadcom_2013: [+LG.Media-2010][+3D BDP][+Media/HR] [+LG NetCast.Media-2011] [-Media/HR690] [-Media/BD660]
+lg bluray_3d_broadcom_2013: [+LG.Media-2010][+3D+BDP][+Media/HR] [+LG NetCast.Media-2011] [-Media/HR690] [-Media/BD660]
+
 
 lg bluray_2013: [+LG.Media-2010] [+LGE] [+Media/BH6830] [+LG NetCast.Media-2011]
 lg bluray_2013:[+LG.Media-2010] [+LGE] [+Media/BP530] [+LG NetCast.Media-2011]
