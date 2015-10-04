@@ -3,8 +3,6 @@ var fs = require('fs');
 const bestmatcher = require('./src/bestmatch');
 const parser = require('./src/parser');
 
-
-
 console.log("SemiDemi Regression Tests");
 
 // Have a script to build tvs.demi.js from tvs.demi
@@ -28,6 +26,7 @@ var runTest = function (testdata) {
       var msg = "\n\n**No match found*/* for: "+testdata.uagent;
       msg += "\n> Expected: "+expected+"";
       console.log(msg);
+      process.exit();
     }
     return;
   }
@@ -42,6 +41,8 @@ var runTest = function (testdata) {
       msg += "\n> Actual  : "+actual;
     }
     console.log(msg);
+    process.exit();
+
   }
 }
 
