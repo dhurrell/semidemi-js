@@ -75,7 +75,8 @@ function parseMatcher(line, lineNum) {
 //TODO:
 //Another possible split then reduce?
 function trimFromEnd(value, toTrim) {
-    if(!value[value.length-1].match(toTrim)) {return value; }
+    if(!value) {return;}
+    if(!value[value.length-1].match(toTrim)) {return value;}
     else {return trimFromEnd(value.substr(0, value.length-1), toTrim);}
 };
 
