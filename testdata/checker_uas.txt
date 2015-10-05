@@ -4933,7 +4933,6 @@ Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39
 Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.51 Safari/537.36 CrKey/25525
 Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.51 Safari/537.36 CrKey/25628
 Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.51 Safari/537.36 CrKey/local.derekjchow
-Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.2.0
 Mozilla/5.0 (X11; U; Linux i686; en) AppleWebKit/534.1 (KHTML, like Gecko) HbbTV/1.1.1 ( DL PVR RTSP;Mstar;OWB;;;) IcecryptT2300HD/stbv1.0/LinuxOS
 Mozilla/5.0 (X11; U; Linux i686; en) AppleWebKit/534.1 (KHTML, like Gecko) HbbTV/1.1.1 ( DL PVR RTSP;Mstar;OWB;;;) Tesco-Technika22-212i
 Mozilla/5.0 (X11; U; Linux i686; en) AppleWebKit/534.1 (KHTML, like Gecko) HbbTV/1.1.1 ( DL PVR RTSP;Mstar;OWB;;;) TOSHIBA-2011-RL/TL

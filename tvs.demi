@@ -505,6 +505,8 @@ panasonic bd_3d_2014_mtk: Mozilla/5.0(compatible; U; InfiNet 0.1; Diga) AppleWeb
 
 panasonic m8000: Opera/9.80 (Linux armv6l; U; [+Panasonic.bd.2012].[+Mediatek]; en) Presto/2.8.115 Version/11.10
 panasonic smarttv: Mozilla/5.0 (compatible; U; InfiNet 0.1; [+Viera]) AppleWebKit/420+ (KHTML, like Gecko)[-Panasonic.]
+panasonic smarttv: [+Mozilla/5.0(compatible; U; InfiNet 0.1; Viera) AppleWebKit/420  (KHTML, like Gecko)(avdn/Panasonic.tv.2011;avvp/ssl;avui/tv;avrt/html5;avkb/mcr,P:113,PU:114,S:115,SF:116,SB:117,ST:112;avst/on)]
+panasonic smarttv: [+Mozilla/5.0(compatible; U; InfiNet 0.1; Viera) AppleWebKit/420  (KHTML, like Gecko)(avdn/Panasonic.tv.2012)]
 
 panasonic tv_2011: ; [+Viera]) AppleWebKit/420+ (KHTML, like Gecko)(avdn/[+Panasonic.tv.2011]
 
@@ -609,12 +611,14 @@ samsung bd_e8: Mozilla/5.0 (SmartHub; [+SMART-TV]; U; Linux/SmartTV; [+Maple2012
 samsung bd_es7: Mozilla/5.0 (SmartHub; [+SMART-TV]; U; Linux/SmartTV; [+Maple2012]) AppleWebKit/534.7 (KHTML, like Gecko) SmartTV Safari/534.7 [+Series=7000(BD)]
 samsung d8000: Mozilla/5.0 (Windows; U; en-US; rv:1.8.1.11; Gecko/20071129; Firefox/2.5.0) [+Maple] 6.0.00080 modelId=[+genoa]
 samsung d8000: Mozilla/5.0 (Windows; U; en-US; rv:1.8.1.11; Gecko/20071129; Firefox/2.5.0) [+Maple] 6.0.00062 modelId=[+x6] modelId=x6
+samsung d8000: Mozilla/5.0 (Windows; U; en-US; rv:1.8.1.11; Gecko/20071129; Firefox/2.5.0) [+Maple] 6.0.00061 [+modelId=x6]
 samsung ht_e4: Mozilla/5.0 (SmartHub; [+SMART-TV]; U; Linux/SmartTV; [+Maple2012]) AppleWebKit/534.7 (KHTML, like Gecko) SmartTV Safari/534.7 [+Series=4000(HT)]
 samsung ht_e5: Mozilla/5.0 (SmartHub; [+SMART-TV]; U; Linux/SmartTV; [+Maple2012]) AppleWebKit/534.7 (KHTML, like Gecko) SmartTV Safari/534.7 [+Series=5000(HT)]
 samsung ht_e6: Mozilla/5.0 (SmartHub; [+SMART-TV]; U; Linux/SmartTV; [+Maple2012]) AppleWebKit/534.7 (KHTML, like Gecko) SmartTV Safari/534.7 [+Series=6000(HT)]
 samsung ht_e8: Mozilla/5.0 (SmartHub; [+SMART-TV]; U; Linux/SmartTV; [+Maple2012]) AppleWebKit/534.7 (KHTML, like Gecko) SmartTV Safari/534.7 [+Series=8000(HT)]
 samsung samsung_internet_tv_maple_6: Mozilla/5.0 (Windows; U; en-US; rv:1.8.1.11; Gecko/20071129; Firefox/2.5.0) [+Maple 6.0.00061] Navi
 samsung samsung_internet_tv_maple_5: Mozilla/5.0 (Windows; U; en-US; rv:1.8.1.11; Gecko/20071129; Firefox/2.5.0) [+Maple 5.1].00266 Navi
+samsung samsung_internet_tv_maple_6: Mozilla/5.0 (Windows; U; en-US; rv:1.8.1.11; Gecko/20071129; Firefox/2.5.0) [+Maple] 6.0.00067 [+Navi]
 samsung pe5: Mozilla/5.0 (SmartHub; [+SMART-TV]; U; Linux/SmartTV; [+Maple2012]) AppleWebKit/534.7 (KHTML, like Gecko) SmartTV Safari/534.7 [+Series=5000(TV)]
 samsung pe6: Mozilla/5.0 (SmartHub; [+SMART-TV]; U; Linux/SmartTV; [+Maple2012]) AppleWebKit/534.7 (KHTML, like Gecko) SmartTV Safari/534.7 [+Series=6000(TV)]
 samsung pe7: Mozilla/5.0 (SmartHub; [+SMART-TV]; U; Linux/SmartTV; [+Maple2012]) AppleWebKit/534.7 (KHTML, like Gecko) SmartTV Safari/534.7 [+Series=7000(TV)]
@@ -729,6 +733,7 @@ toshiba toshiba_2011: Mozilla/5.0 (X11; U; Linux i686; en) AppleWebKit/534.1 (KH
 toshiba toshiba_2011: Opera/9.80 (Linux armv7l; U; [+TOSHIBA; BDX2250KB;] [+Mediatek]; en) Presto/2.8.115 Version/11.10
 toshiba tl963: Mozilla/5.0 (X11; U; Linux i686; en) AppleWebKit/534.1(KHTML, like Gecko) [+HbbTV]/1.1.1(+DL+PVR+RTSP;Mstar;OWB;;;) [+TOSHIBA-2012A-RL/TL/VL]
 toshiba tl968: Mozilla/5.0 (X11; U; Linux i686; en) AppleWebKit/534.1 (KHTML, like Gecko) [+HbbTV]/1.1.1 (+DL+PVR+RTSP;Mstar;OWB;;;) [+TOSHIBA-2012B-RL/TL/WL]
+toshiba tl968: Mozilla/5.0 (X11; U; Linux i686; en) AppleWebKit/534.1 (KHTML, like Gecko) HbbTV/1.1.1 ( DL PVR RTSP;Mstar;OWB;;;) [+TOSHIBA-2012A-RL/TL/VL]
 toshiba tv_2013: Mozilla/5.0 (Linux; U; en-GB) AppleWebKit/534.1(KHTML, like Gecko) [+HbbTV]/1.1.1(;TOSHIBA;MWB;;;) [+TOSHIBA-2013]A-L4/L6/L7/L9
 toshiba tv_2014: Mozilla/5.0 (Linux; U; en-UK) AppleWebKit/537.4 (KHTML, like Gecko) [+HbbTV]/1.1.1 (;TOSHIBA;MWB;;;) [+TOSHIBA-DTV-2014A] (L6453; 8.1.21.0.1.1; 2014A; EU)
 
