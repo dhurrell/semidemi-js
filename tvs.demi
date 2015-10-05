@@ -217,13 +217,13 @@ lg bluray_3d_2013: [+Mozilla/5.0 (DirectFB; Linux armv7l) AppleWebKit/534.26  (K
 lg bluray_3d_2013: Mozilla/5.0 (DirectFB; Linux armv7l) AppleWebKit/534.26  (KHTML, like Gecko) Version/5.0 Safari/534.26  avdn/LG.Media-2010 avui/tv avvp/ssl avkb/mcr,B:461 avrt/html4 avst/on [+LG Browser/5.00.00( 3D BDP; LGE; Media/BH9430; 1811; abc;); LG NetCast.Media-2012]
 lg bluray_3d_2013: Mozilla/5.0 (DirectFB; Linux armv7l) AppleWebKit/534.26  (KHTML, like Gecko) Version/5.0 Safari/534.26  avdn/[+LG.Media-2010 avui/tv avvp/ssl avkb/mcr,B:461 avrt/html4 avst/on LG Browser/5.00.00]( 3D BDP; LGE; Media/BH9430; 1799; abc;); LG NetCast.Media-2012]
 
-lg tv_2013_midrange: [+LGE] [+70V-ZA] [-55UC970V-ZA] [-49LB870V-ZA] [-47LB670V-ZA] [-42LB670V-ZA] [+LG NetCast.TV-2013]
+lg tv_2013_midrange: [+LGE] [+70V-ZA] [-65UC970V-ZA] [-55UC970V-ZA] [-49LB870V-ZA] [-47LB670V-ZA] [-42LB670V-ZA] [+LG NetCast.TV-2013]
 lg tv_2013_midrange: [+LGE] [+40V-ZA] [+LG NetCast.TV-2013]
 lg tv_2013_midrange: [+LGE] [+10V-ZA] [+LG NetCast.TV-2013]
 lg tv_2013_midrange: [+LGE] [+20V-ZA] [+LG NetCast.TV-2013]
 lg tv_2013_midrange: [+LGE] [+40V-ZA] [+LG NetCast.TV-2013]
 lg tv_2013_midrange: [+LGE] [+40V-ZZ] [+LG NetCast.TV-2013]
-lg tv_2013_midrange: [+LGE] [+50V-ZA] [-55UB950V-ZA] [-55UB850V-ZA] [+LG NetCast.TV-2013]
+lg tv_2013_midrange: [+LGE] [+50V-ZA] [-65UB950V-ZA] [-55UB950V-ZA] [-55UB850V-ZA] [+LG NetCast.TV-2013]
 lg tv_2013_midrange: [+LGE] [+60U-ZA] [+LG NetCast.TV-2013]
 lg tv_2013_midrange: [+LGE] [+13V-ZB] [+LG NetCast.TV-2013]
 lg tv_2013_midrange: [+LGE] [+40V-ZB] [+LG NetCast.TV-2013]
@@ -395,20 +395,21 @@ lg bdp_2014_midrange: LG.Media-2010 LG Browser/[v4.1.4] [+LGE; Media/BH5240] [+L
 
 
 #too generic?
-lg tv_2014_highend: [+LGE] [+webOS.TV-2014] [+LG NetCast.TV-2013 Compatible] (LGE, WEBOS1, wired) [-55UC970V-ZA] [-49UB850B-Z] [-2013] [-55EC930V-ZA] [-55LA970W-ZA] [-55UB850V]
+lg tv_2014_highend: [+LGE] [+webOS.TV-2014] [+LG NetCast.TV-2013 Compatible] (LGE, WEBOS1, wired) [-65UC970V-ZA] [-65UB980V-ZA] [-65UB950V-ZB] [-65UB950V-ZA] [-65UB9500-UA] [-60UB850T-TA] [-55UC970V-ZA] [-49UB850B-Z] [-2013] [-55EC930V-ZA] [-55LA970W-ZA] [-55UB850V]
 lg tv_2014_highend: [+LGE] [+32LB653V-ZK] [+LG NetCast.TV-2013]
 lg tv_2014_highend: [+LGE] [+42LB653V-ZK] [+webOS.TV-2014]
 lg tv_2014_highend: [+LGE] [+42LB670V-ZA] [+webOS.TV-2014]
 #too generic?
-lg tv_2014_highend: [+LGE] [+webOS.TV-2014][-55UC970V-ZA] [-55UB950V-ZB] [-55UB950V-ZA] [-49UB850] [-55EC930V-ZA] [-55LA970W-ZA] [-55UB850V]
+lg tv_2014_highend: [+LGE] [+webOS.TV-2014] [-65UC970V-ZA] [-65UB980V-ZA] [-65UB950V-ZB] [-65UB950V-ZA] [-65UB9500-UA] [-60UB850T-TA] [-55UC970V-ZA] [-55UB950V-ZB] [-55UB950V-ZA] [-49UB850] [-55EC930V-ZA] [-55LA970W-ZA] [-55UB850V]
 lg tv_2014_highend: [+LGE] [+42LB653V-ZK]
 #too generic?
-lg tv_2014_highend: Mozilla/5.0(Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00 [+webOS.TV-2014] [+LG NetCast.TV-2013 Compatible] LGE [-55UC970V-ZA] [-55UB950V-ZB] [-49UB850] [-55EC930V-ZA] [-55LA970W-ZA] [-55UB850V] [-55UB950V-ZA]
+lg tv_2014_highend: Mozilla/5.0(Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00 [+webOS.TV-2014] [+LG NetCast.TV-2013 Compatible] LGE [-65UC970V-ZA] [-65UB980V-ZA] [-65UB950V-ZB] [-65UB950V-ZA] [-65UB9500-UA] [-60UB850T-TA] [-55UC970V-ZA] [-55UB950V-ZB] [-49UB850] [-55EC930V-ZA] [-55LA970W-ZA] [-55UB850V] [-55UB950V-ZA]
 
 
 lg tv_2014_ultrahighend: Mozilla/5.0(Unknown; Linux armv7l) AppleWebKit/537.1+ (KHTML, like Gecko) Safari/537.1+ LG Browser/6.00.00(+ TV set capa; sw version, [+model name] ; sw version; hw version); [+LG NetCast.TV-2013]
 
-lg tv_2014_ultrahighend: [+LGE] 49[+UB8]30V-ZA] [-49UB840V-ZD] [-UB850V-ZB] [-49UB850V-ZA] [-55UB850V] [-49UB850V-ZD] [+LG NetCast.TV-2013]
+#too generic?
+lg tv_2014_ultrahighend: [+LGE] 49[+UB8]30V-ZA] [-65UC970V-ZA] [-65UB950V-ZA] [-60UB850T-TA] [-49UB840V-ZD] [-UB850V-ZB] [-49UB850V-ZA] [-55UB850V] [-49UB850V-ZD] [+LG NetCast.TV-2013]
 lg tv_2014_ultrahighend: [+UB820V-LG NetCast.TV-2013]
 lg tv_2014_ultrahighend: [+UB830V-LG NetCast.TV-2013]
 
