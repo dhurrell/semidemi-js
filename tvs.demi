@@ -115,9 +115,10 @@ lg netcast_media_2011: [+LGE; Media/HR550] [+LG NetCast.Media-2011]
 lg netcast_media_2011: [+LGE; Media/ST600; ST.8.79.207.F;] [+LG NetCast.Media-2011]
 lg netcast_media_2011: [+LGE; Media/BH9540] [+LG NetCast.Media-2011]
 lg netcast_media_2011: [+LGE; Media/BH9540] [+LG NetCast.Media-2011]
-lg netcast_media_2011: [+LG NetCast.Media-2011]
+lg netcast_media_2011: LG Browser/4.1.4 [+LGE; Media/] [-Safari/531.2+] [-BH6220S] [+LG NetCast.Media-2011]
+lg netcast_media_2011: [+LG NetCast.Media-2011] [-BP640] [-BH5740]
 
-lg netcast_tv_2011: [+avdn/LG.TV-2011] [+LGE] [+LG NetCast.TV-2010]
+lg netcast_tv_2011: [+avdn/LG.TV-2011] [+LGE] Safari/531.2+ [+LG NetCast.TV-2010]
 
 lg st600: [+LG.Media-2010] [+LGE;] [+Media/ST600][+LG NetCast.Media-2011]
 
@@ -129,11 +130,21 @@ lg l9_tv_2012: Mozilla/5.0 (DirectFB; Linux armv7l) AppleWebKit/534.26+ (KHTML, 
 
 lg mtk_tv_2012: Mozilla/5.0 (DirectFB; Linux armv7l) AppleWebKit/534.26+ (KHTML, like Gecko) Version/5.0 Safari/534.26+ HbbTV/1.1.1 ( ;LGE ;NetCast 3.0 ;1.0 [+;1.0M] ;)
 
-lg bluray_2012: Mozilla/5.0 (DirectFB; Linux armv7l) avdn/LG Media/BH9520 BLURAY DUMMY [+LG UA] MATCHED IN BBC-WURFL LGTVMATCHER.JAVA
-lg bluray_2012: [+LGE] [+Media/BH]9520 [+LG NetCast.Media-2012]
-lg bluray_2012: [+LGE] [+Media/BH]9520 [+LG NetCast.TV-2012]
-lg bluray_2012: [+LGE] [+Media/BP]520 [+LG NetCast.TV-2012]
-lg bluray_2012: [+LG.Media-2010] LGE; [+Media/B] [-BD670] [-BD660] [-BH6340] [-BH9540] [+LG NetCast.Media-2011]
+lg bluray_2012: LG [+Media/BH9520] [+LG UA]
+lg bluray_2012: [+LGE] [+Media/BH9520] [+LG NetCast.Media-2012]
+lg bluray_2012: [+LGE] [+Media/BH7520] [+LG NetCast.Media-2012]
+lg bluray_2012: [+LGE] [+Media/BH9520] [+LG NetCast.TV-2012]
+lg bluray_2012: [+LGE] [+Media/BP520] [+LG NetCast.TV-2012]
+lg bluray_2012: [+LGE] [+Media/BH7520] [+LG NetCast.TV-2012]
+lg bluray_2012: [+LGE] [+Media/BH6520] [+LG NetCast.TV-2012]
+lg bluray_2012: [+LGE] [+Media/BH5520] [+LG NetCast.TV-2012]
+lg bluray_2012: [+LGE] [+Media/BH8220] [+LG NetCast.TV-2012]
+lg bluray_2012: [+LGE] [+Media/BH5320] [+LG NetCast.TV-2012]
+lg bluray_2012: [+LGE] [+Media/BH7220] [+LG NetCast.TV-2012]
+lg bluray_2012: [+LGE] [+Media/BP220] [+LG NetCast.TV-2012]
+lg bluray_2012: [+LGE] [+Media/BP620] [+LG NetCast.TV-2012]
+
+lg bluray_2012: [+LG.Media-2010] LGE; [+Media/B] [-BH5740] [-BP440] [-BP640] [-BD670] [-BD660] [-BH6340] [-BH9540] [+LG NetCast.Media-2011]
 
 lg tv_2012: [+LG NetCast.TV-2012]
 lg tv_2012: [+42LE7500-ZA] [+LG NetCast.TV-2011]
@@ -194,7 +205,9 @@ lg bluray_2013:[+LG.Media-2010] [+LGE] [+Media/BP530] [+LG NetCast.Media-2011]
 lg bluray_2013: [+Linux armv6l] [+BLURAY 2013] DUMMY [+LG UA] MATCHED IN BBC-WURFL LGTVMATCHER.JAVA
 
 lg bluray_3d_2013: [+Linux armv7l] [+BLURAY 2013] DUMMY [+LG UA] MATCHED IN BBC-WURFL LGTVMATCHER.JAVA
-lg bluray_3d_2013: Mozilla/5.0 (DirectFB; Linux armv7l) AppleWebKit/534.26+ (KHTML, like Gecko) Version/5.0 Safari/534.26+ avdn/[+LG.Media-2010] LG Browser/5.00.00([++3D+BDP]; LGE; [+Media/B]P730; 1152; abc;); [+LG NetCast.Media-2012]
+lg bluray_3d_2013: [+LG.Media-2010] [+Media/BP730] [+LG NetCast.Media-2012]
+lg bluray_3d_2013: [+LG.Media-2010] [+Media/BH9430] [+LG NetCast.Media-2012]
+
 lg bluray_3d_2013: Mozilla/5.0 (DirectFB; U; Linux 7630; en) AppleWebKit/531.2+ (KHTML, like Gecko) Safari/531.2+ avdn/[+LG.Media-2010] LG Browser/4.1.4(+3D+BDP; LGE; [+Media/HR93]2; BR.5.97.037.B; 0x00000001;); [+LG NetCast.Media-2011][-avrt/html4 avst/off]
 lg bluray_3d_2013: Mozilla/5.0 (DirectFB; Linux armv7l) AppleWebKit/534.26  (KHTML, like Gecko) Version/5.0 Safari/534.26  avdn/[+LG.Media-2010] avui/tv avvp/ssl avkb/mcr,B:461 avrt/html4 avst/off LG Browser/5.00.00( 3D BDP; LGE; [+Media/BP73]0; 1766; abc;); [+LG NetCast.Media-2012]
 lg bluray_3d_2013: [+Mozilla/5.0 (DirectFB; Linux armv7l) AppleWebKit/534.26  (KHTML, like Gecko) Version/5.0 Safari/534.26  avdn/LG.Media-2010 avui/tv avvp/ssl avkb/mcr,B:461 avrt/html4 avst/on LG Browser/5.00.00( 3D BDP; LGE; Media/BH9430; 1832; abc;); LG NetCast.Media-2012]
@@ -285,6 +298,8 @@ lg tv_2013_midrange: [+LGE] [+LB582V-ZJ] [+LG NetCast.TV-2013]
 lg tv_2013_midrange: [+LGE] [+LB580V-ZM] [+LG NetCast.TV-2013]
 lg tv_2013_midrange: [+LGE] [+LB610V-ZU] [+LG NetCast.TV-2013]
 lg tv_2013_midrange: [+LGE] [+LB580V-ZM] [+LG NetCast.TV-2013]
+lg tv_2013_midrange: [+LG] [+LN470U-Z] [+LG NetCast.TV-2013]
+lg tv_2013_midrange: [+LG] [+84LM960V-ZD] [+LG NetCast.TV-2013]
 
 lg tv_2013_highend: [+LGE; 42LA790V-Z] [+LG NetCast.TV-2013]
 lg tv_2013_highend: [+LGE] [+790V-ZA] [+LG NetCast.TV-2013]
@@ -321,7 +336,6 @@ lg tv_2013_highend: [+LGE; 55EA880V-ZC] [+LG NetCast.TV-2013]
 lg tv_2013_highend: [+LGE; 55EA880W-ZC] [+LG NetCast.TV-2013]
 lg tv_2013_highend: [+LGE; 55LA965W-ZA] [+LG NetCast.TV-2013]
 lg tv_2013_highend: [+LGE; 65LA965W-ZA] [+LG NetCast.TV-2013]
-lg tv_2013_highend: [+LGE; 84LM960V-ZD] [+LG NetCast.TV-2013]
 lg tv_2013_highend: [+LGE; 49UB850B-ZB] [+LG NetCast.TV-2013]
 lg tv_2013_highend: [+LGE; 49UB850B-ZD] [+LG NetCast.TV-2013]
 
@@ -331,10 +345,24 @@ lg bdp_2014_highend:  [+BLURAY 2014] [+HIGHEND] DUMMY [+LG UA] MATCHED IN BBC-WU
 lg bdp_2014_highend: [+avdn/LG.Media-2010] [+LGE] [+Media/BP740] [+LG NetCast.Media-2012]
 lg bdp_2014_highend: [+Media/BH9540][+LG NetCast.Media-2012]
 lg bdp_2014_highend: [+BDP; LGE; Media/BH9540] [+LG NetCast.Media-2012]
+lg bdp_2014_highend: [+BDP; LGE; Media/BP740] [+LG NetCast.Media-2012]
+lg bdp_2014_highend: [+LG.Media-2010] [+Media/BH9240] [+LG NetCast.Media-2012]
+lg bdp_2014_highend: [+LG.Media-2010] [+Media/BH9840] [+LG NetCast.Media-2012]
+lg bdp_2014_highend: [+LG.Media-2010] [+Media/BH7140] [+LG NetCast.Media-2012]
+lg bdp_2014_highend: [+LG.Media-2010] [+Media/BH7440] [+LG NetCast.Media-2012]
+lg bdp_2014_highend: [+LG.Media-2010] [+Media/BH7940] [+LG NetCast.Media-2012]
 
+
+lg bdp_2014_midrange: [+BDP; LGE; Media/BH5740] [+LG NetCast.Media-2011]
 lg bdp_2014_midrange: [+BLURAY 2014] DUMMY [+LG UA] MATCHED IN BBC-WURFL LGTVMATCHER.JAVA
 lg bdp_2014_midrange: [+LG.Media-2010] [+LGE] [+Media/BP540] [+LG NetCast.Media-2011]
 lg bdp_2014_midrange: [+LGE; Media/BH6340][+LG NetCast.Media-2011]
+lg bdp_2014_midrange: [+LGE; Media/BH5240][+LG NetCast.Media-2011]
+lg bdp_2014_midrange: [+LGE; Media/BP440] [+LG NetCast.Media-2011]
+lg bdp_2014_midrange: [+LGE; Media/BP640] [+LG NetCast.Media-2011]
+lg bdp_2014_midrange: [+LGE; Media/NB3740A] [+LG NetCast.Media-2011]
+lg bdp_2014_midrange: LG.Media-2010 LG Browser/[v4.1.4] [+LGE; Media/BH5240] [+LG NetCast.Media-2011]
+
 
 lg tv_2014_highend: [+LGE] [+webOS.TV-2014] [+LG NetCast.TV-2013 Compatible] (LGE, WEBOS1, wired) [-49UB850B-ZB] [-2013]
 lg tv_2014_highend: [+LGE] [+32LB653V-ZK] [+LG NetCast.TV-2013]
@@ -342,11 +370,14 @@ lg tv_2014_highend: [+LGE] [+42LB653V-ZK] [+webOS.TV-2014]
 lg tv_2014_highend: [+LGE] [+42LB670V-ZA] [+webOS.TV-2014]
 lg tv_2014_highend: [+LGE] [+webOS.TV-2014]
 lg tv_2014_highend: [+LGE] [+42LB653V-ZK]
+lg tv_2014_highend: Mozilla/5.0(Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00 [+webOS.TV-2014] [+LG NetCast.TV-2013 Compatible] LGE
 
 
 lg tv_2014_ultrahighend: Mozilla/5.0(Unknown; Linux armv7l) AppleWebKit/537.1+ (KHTML, like Gecko) Safari/537.1+ LG Browser/6.00.00(+ TV set capa; sw version, [+model name] ; sw version; hw version); [+LG NetCast.TV-2013]
 
 lg tv_2014_ultrahighend: [+LGE] 49[+UB8]30V-ZA] [-49UB840V-ZD] [+LG NetCast.TV-2013]
+lg tv_2014_ultrahighend: [+UB820V-LG NetCast.TV-2013]
+lg tv_2014_ultrahighend: [+UB830V-LG NetCast.TV-2013]
 
 # 2015
 lg bdp_2015_midrange: Mozilla/5.0 (DirectFB; U; Linux armv7l; en) AppleWebKit/531.2+ (KHTML, like Gecko) Safari/531.2+ avdn/[+LG.Media-2010] avui/tv avvp/ssl avkb/mcr,B:461 avrt/html4 avst/off LG Browser/4.1.4(+3D+PORTAL_KEY+BDP; LGE; [+Media/LHB]750; 23764; abc;); [+LG NetCast.Media-2011]
@@ -452,6 +483,7 @@ panasonic dmp_bdt110: Opera/9.80 (Linux mn10300; U; (avdn/[+Panasonic.bd.2011];a
 panasonic dmp_bdt110: Opera/9.80 (Linux mn10300;U;(avdn/[+Panasonic.bd.2012];avvp/ssl;avui/tv;avrt/html5;avkb/mcr,P:113,PU:114,S:115,SF:116,SB:117,ST:112;avui/tv;avst/on))Presto/2.12.362 Version/12.11
 panasonic dmp_bdt110: Opera/9.80 (Linux mn10300; U; (avdn/[+Panasonic.bd3d.2012];avvp/ssl;avui/tv;avrt/html5;avkb/mcr,P:113,PU:11 4,S:115,SF:116,SB:117,ST:112;avui/tv;avst/on); en) Presto/2.9.167 Version/11.50
 panasonic dmp_bdt110: Opera/9.80 (Linux mn10300; U; (avdn/[+Panasonic.bd.2012];avvp/ssl;avui/tv;avrt/html5;avkb/mcr,P:113,PU:114,S:115,SF:116,SB:117,ST:112;avui/tv;avst/on); en) Presto/2.9.167 Version/11.50
+panasonic bd_3d_2013_st: Opera/9.80 (Linux mn10300; U; (avdn/[+Panasonic.bd.2012];avvp/ssl;avui/tv;avrt/html5;avkb/mcr,P:113,PU:114,S:115,SF:116,SB:117,ST:112;avui/tv;avst/on); en) Presto/2.10.287 Version/12.00
 
 panasonic tv_2013_mt5590: Mozilla/5.0(compatible; U; InfiNet 0.1; Viera) AppleWebKit/420+ (KHTML, like Gecko)(avdn/[+Panasonic.tv.mtk.2013])
 panasonic tv_2013_pro4: Mozilla/5.0(compatible; U; InfiNet 0.1; Viera) AppleWebKit/420+ (KHTML, like Gecko)(avdn/[+Panasonic.tv.pro4.2013])
