@@ -431,6 +431,7 @@ loewe tv_2013: Opera/9.80 (Linux sh4;  HbbTV/1.2.1 (+PVR; [+Loewe; SL22]0; LOH/4
 loewe tv_2013: Opera/9.80 (Linux sh4; HbbTV/1.2.1 (+PVR; [+Loewe; SL22]0; LOH/4.01;;) CE-HTML/1.0 Config(L:eng,CC:GBR)  NETRANGEMMH) Presto/2.12.362 Version/12.10
 loewe sl150: Opera/10.60 (Linux sh4 ; U; HbbTV/1.1.1 (+PVR; [+Loewe; SL150;] LOH/3.10; CE-HTML/1.0
 loewe sl150: [+Opera/9.80] (Linux sh4; U; HbbTV/1.1.1 (+PVR; [+Loewe; SL150;] LOH/3.10;;) CE-HTML/1.0 Config(L:eng,CC:GBR); en) Presto/2.10.250 Version/11.60
+loewe sl150: Opera/10.60 (Linux sh4 ; U; HbbTV/1.1.1 ( PVR; [+Loewe; SL]121; LOH/3.10;;) CE-HTML/1.0 Config(L:eng,CC:GBR); en) [+Presto]/2.6.33 Version/10.60
 
 
 ########
@@ -472,7 +473,9 @@ nintendo wiiu: Mozilla/5.0 ([+Nintendo WiiU]) AppleWebKit/xxx.xx (KHTML, like Ge
 
 oppo bdp_10x: [+OPPO BDP-10X]
 oppo bdp_10x: Opera/9.80 (Linux armv6l; [+Opera TV Store/4515]; U; [+OPPO PLAYER BDP-10]5EU; [+Mediatek]; en) Presto/2.10.250 Version/11.60
-
+oppo bdp_10x: [+Opera/9.80 (Linux armv6l; Opera TV Store/4515; U; en) Presto/2.10.250 Version/11.60]
+oppo bdp_10x: [+Opera/9.80 (Linux armv6l; Opera TV Store/4515; U; OPPO PLAYER; Mediatek; en) Presto/2.10.250 Version/11.60]
+oppo bdp_10x: [+Opera/9.80 (Linux armv6l; Opera TV Store/]4518; U; ([+SonyBDP/BDV]12); en) [+Presto/2.10.250 Version/11.60]
 
 ########
 # Oregan Onyx
@@ -558,6 +561,7 @@ panasonic tv_2015_midrange: Mozilla/5.0 (FreeBSD; U; Viera; en-IE) AppleWebKit/5
 
 philips bdp5200: Opera/10.60 ([+Linux armv6l ; U; CE-HTML/1.0 NETTV/3.0.1;; en]) Presto/2.6.33 Version/10.60
 philips hmp7000_bluray_2012: Opera/9.80 (Linux armv7l; U; [+CE-HTML]/1.0 NETTV/3.0.1; [+PHILIPS-AVM-2012]; en) Presto/2.10.250. Version/11.60
+philips hmp7000_bluray_2012: [+Opera/9.70 (Linux armv6l ; U; CE-HTML/1.0 NETTV/2.0.2; en) Presto/2.2.1]
 philips tv_3_2_1: Opera/9.80 (Linux mips ; U; [+HbbTV]/1.1.1 (; [+Philips]; ; ; ; ) [+CE-HTML]/1.0 NETTV/3.2.1; en) Presto/2.6.33 Version/10.70
 philips tv_4_0_1: Opera/9.80 (Linux mips ; U; [+HbbTV]/1.1.1 (; [+Philips]; ; ; ; ) [+CE-HTML]/1.0 NETTV/4.0.1; en) Presto/2.9.167 Version/11.50
 philips tv550_r3: Opera/9.80 (Linux mips; U;[+HbbTV]/1.1.1(;[+Philips];;;;) [+CE-HTML]/1.0 NETTV/3.1.0; en) Presto/2.6.33 Version/10.70
@@ -627,6 +631,7 @@ samsung stb_e7: Mozilla/5.0 (SmartHub; [+SMART-TV]; U; Linux/SmartTV; [+Maple201
 samsung tv_foxp_2013: Mozilla/5.0 (SmartHub; [+SMART-TV]; U; Linux/SmartTV+2013; [+Maple2012]) AppleWebKit/535.20+ (KHTML, like Gecko) SmartTV Safari/535.20+ Brand=[+Samsung] Platform=[+FoxP] Model=xxxx DUMMY SAMSUNG UA MATCHED IN BBC-WURFL SAMSUNGTVMATCHER.JAVA
 samsung tv_x12_2013: Mozilla/5.0 (SmartHub; [+SMART-TV]; U; Linux/SmartTV+2013; [+Maple2012]) AppleWebKit/535.20+ (KHTML, like Gecko) SmartTV Safari/535.20+ Brand=[+Samsung] Platform=[+X12] Model=UF6400
 samsung bd_ht_2013: Opera/9.80 (Linux armv6l; [+Opera TV Store/4515]; U; [+Smart-BD]; M; Linux/SmartBD; [+HT-F4200;] [+Mediatek]; en) Presto/2.10.250 Version/11.60
+samsung bd_ht_2013: Opera/9.80 (Linux armv6l; [+Opera TV Store/4515]; U; [+Smart-BD]; M; Linux/SmartBD; BD-F5100; Mediatek; en) Presto/2.10.250 Version/11.60
 samsung bd_ht_2013: Opera/9.80 (Linux armv6l; [+Opera TV Store/5530]; [+Smart-BD]; M; Linux/SmartBD; [+HT-F4200;] [+Mediatek]) Presto/2.12.362 Version/12.11
 samsung bd_ht_2013: Opera/9.80 (Linux armv6l; [+Opera TV Store/4515]; U; [+Smart-BD]; M; Linux/SmartBD; [+HT-F4500;] [+Mediatek]; en) Presto/2.10.250 Version/11.60
 samsung bd_ht_2013: Opera/9.80 (Linux armv6l; [+Opera TV Store/5530]; [+Smart-BD]; M; Linux/SmartBD; [+HT-F4500;] [+Mediatek]) Presto/2.12.362 Version/12.11
