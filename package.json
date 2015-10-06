@@ -26,5 +26,9 @@
   "homepage": "https://github.com/sdclibbery/semidemi-js",
   "dependencies": {
     "express": "^4.12.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.0.0"
   }
 }

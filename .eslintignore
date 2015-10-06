@@ -1,0 +1,8 @@
+# node_modules ignored by default
+lib/*
+*.demi
+*.md
+*.txt
+*.html
+*.json
+*LICENSE

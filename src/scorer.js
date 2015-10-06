@@ -9,9 +9,9 @@ module.exports = (ua) => (matcher)=> {
         let constructed = last.constructed;
         let normalised = last.normalised;
 
-        constructed += match.fuzzy || "";
-        constructed += match.invariant || "";
-        constructed += match.version || "";
+        constructed += match.fuzzy || '';
+        constructed += match.invariant || '';
+        constructed += match.version || '';
 
         if (match.version) {
             const normRegEx = buildNormalisationRegEx(match.version);
@@ -23,7 +23,7 @@ module.exports = (ua) => (matcher)=> {
             normalised: normalised
         };
 
-    }, {constructed: "", normalised: ua});
+    }, {constructed: '', normalised: ua});
 
     return editDistance(filtered.normalised, filtered.constructed);
 };
@@ -31,22 +31,22 @@ module.exports = (ua) => (matcher)=> {
 //buildNormalisationRegEx :: String -> RegExp
 function buildNormalisationRegEx(prefix) {
     //TODO: Can this be improved/is it necessary?
-    const normalised = prefix.replace(/\\/g, "\\\\")
-                            .replace(/\*/g, "\\*")
-                            .replace(/\./g, "\\.")
-                            .replace(/\[/g, "\\[")
-                            .replace(/\]/g, "\\]")
-                            .replace(/\+/g, "\\+")
-                            .replace(/\-/g, "\\-")
-                            .replace(/\?/g, "\\?")
-                            .replace(/\(/g, "\\(")
-                            .replace(/\)/g, "\\)")
-                            .replace(/\^/g, "\\^")
-                            .replace(/\$/g, "\\$")
-                            .replace(/\!/g, "\\!")
-                            .replace(/\&/g, "\\&");
-    return new RegExp (normalised + "[0-9._]+");
-};
+    const normalised = prefix.replace(/\\/g, '\\\\')
+    .replace(/\*/g, '\\*')
+    .replace(/\./g, '\\.')
+    .replace(/\[/g, '\\[')
+    .replace(/\]/g, '\\]')
+    .replace(/\+/g, '\\+')
+    .replace(/\-/g, '\\-')
+    .replace(/\?/g, '\\?')
+    .replace(/\(/g, '\\(')
+    .replace(/\)/g, '\\)')
+    .replace(/\^/g, '\\^')
+    .replace(/\$/g, '\\$')
+    .replace(/\!/g, '\\!')
+    .replace(/\&/g, '\\&');
+    return new RegExp (normalised + '[0-9._]+');
+}
 
 //editDistance :: Num i => i -> i -> i
 function editDistance(a, b) {
@@ -84,4 +84,4 @@ function editDistance(a, b) {
     }
 
     return matrix[b.length][a.length];
-};
+}

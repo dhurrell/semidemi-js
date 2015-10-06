@@ -1,10 +1,10 @@
 'use strict';
 module.exports = (input) => {
     return input
-        .split(/[\r\n]+/)
-        .filter(isNotEmptyLine)
-        .filter(isNotCommentLine)
-        .map(parseMatcher);
+    .split(/[\r\n]+/)
+    .filter(isNotEmptyLine)
+    .filter(isNotCommentLine)
+    .map(parseMatcher);
 };
 
 //TODO:
@@ -14,7 +14,7 @@ module.exports = (input) => {
 //might be best to swap back to loop if it doesn't
 function parseLine(matcher, resultHolder, lineNum) {
     // Look for start of marked up section
-    const iBegin = matcher.indexOf("[");
+    const iBegin = matcher.indexOf('[');
 
     if (iBegin === -1) {
         // No marked up sections remaining
@@ -28,18 +28,18 @@ function parseLine(matcher, resultHolder, lineNum) {
     // Look for end of marked up section
     const type = matcher[iBegin+1];
     matcher = matcher.substr(iBegin);
-    const iEnd = matcher.indexOf("]");
+    const iEnd = matcher.indexOf(']');
 
     if (iEnd === -1) { throw Error(`Syntax Error: Unterminated '[' on line ${lineNum}`); }
 
     const markedUpSection = matcher.substr(2, iEnd-2);
 
-    if (type === "+") {
+    if (type === '+') {
         resultHolder.result.push({ invariant: markedUpSection});
         resultHolder.hasInvariant = true;
-    } else if (type === "-") {
+    } else if (type === '-') {
         resultHolder.result.push({ disallowed: markedUpSection });
-    } else if (type === "v") {
+    } else if (type === 'v') {
         resultHolder.result.push({ version: trimFromEnd(markedUpSection, /[0-9\-_\.]/) });
     } else {
         throw Error(`Syntax Error: Invalid markup '[${type}...]' on line ${lineNum}`);
@@ -47,7 +47,7 @@ function parseLine(matcher, resultHolder, lineNum) {
 
     const nextMatcher = matcher.substr(iEnd+1);
 
-    if(nextMatcher === "") {
+    if(nextMatcher === '') {
         return resultHolder;
     } else {
         return parseLine(nextMatcher, resultHolder, lineNum);
@@ -70,7 +70,7 @@ function parseMatcher(line, lineNum) {
 
     if (!resultHolder.hasInvariant) {throw Error(`Error: Matcher has no invariants on line ${lineNum}`); }
     return resultHolder.result;
-};
+}
 
 //TODO:
 //Another possible split then reduce?
@@ -78,14 +78,14 @@ function trimFromEnd(value, toTrim) {
     if(!value) {return;}
     if(!value[value.length-1].match(toTrim)) {return value;}
     else {return trimFromEnd(value.substr(0, value.length-1), toTrim);}
-};
+}
 
 function isNotEmptyLine(line) {
     const emptyLineRegex = /^\s*$/;
     return line.match(emptyLineRegex) == null;
-};
+}
 
 function isNotCommentLine(line) {
     const commentLineRegex = /^\s*#.*$/;
     return line.match(commentLineRegex) == null;
-};
+}
