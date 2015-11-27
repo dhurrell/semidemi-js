@@ -11,7 +11,7 @@ function regenerateComparisonDataFile(success) {
 	let outstandingResults = 0;
 
 	const output = fs.openSync(outPath, 'w');
-	const results = {};
+	const results = [];
 
 	function onResponse() {
 		outstandingResults--;
@@ -22,9 +22,11 @@ function regenerateComparisonDataFile(success) {
 		}
 	}
 
-	function onResult(ua, result) {
-		console.log(`Brand: ${result.brand}, Model: ${result.model}, UA: ${ua}`);
-		results[ua] = result;
+	function onResult(result) {
+		if (result.brand && result.model) {
+			console.log(`Brand: ${result.brand}, Model: ${result.model}, UA: ${result.ua}`);
+			results.push(result);
+		}
 		onResponse();
 	}
 
@@ -75,7 +77,8 @@ function getDemiResponseForUA(ua, success, error) {
 	downloadFile(options, function(data) {
 		try {
 			const result = JSON.parse(data);
-			success(ua, {
+			success({
+				ua: ua,
 				brand: result.brand,
 				model: result.model
 			});

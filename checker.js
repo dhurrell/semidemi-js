@@ -21,16 +21,16 @@ function semiDemi(ua) {
     return result[0].brand + '-' + result[0].model;
 }
 
-function testUserAgent(device, ua, failures) {
+function testUserAgent(device, failures) {
     const expected = normaliseDemiValue(device.brand) + '-' + normaliseDemiValue(device.model);
-    const got = semiDemi(ua)
+    const got = semiDemi(device.ua)
 
     if (expected === got) {
         process.stdout.write('.');
     } else {
         process.stdout.write('x');
         failures.push({
-            ua: ua,
+            ua: device.ua,
             expected: expected,
             got: got
         });
@@ -57,14 +57,12 @@ function runTests (json) {
     const dodgyUAs = [];
     let count = 0;
 
-    for (let comparisonUA in data) {
-        const device = data[comparisonUA];
-
+    data.forEach(function(device) {
         if (device.brand && device.model) {
             count++;
-            testUserAgent(device, comparisonUA, dodgyUAs);
+            testUserAgent(device, dodgyUAs);
         }
-    }
+    });
 
     console.log();
 
