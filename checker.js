@@ -1,6 +1,6 @@
 'use strict';
 
-const inFile = 'testdata/livecomparisondata.json';
+const inFile = 'testdata/comparisondata.json';
 
 const fs = require('fs');
 const bestmatcher = require('./src/bestmatch');

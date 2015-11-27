@@ -5,7 +5,7 @@ const lbl = require('linebyline');
 const fs = require('fs');
 
 const inPath = 'testdata/checker_uas.txt';
-const outPath = 'testdata/livecomparisondata.json';
+const outPath = 'testdata/comparisondata.json';
 
 function regenerateComparisonDataFile(success) {
     let outstandingResults = 0;
