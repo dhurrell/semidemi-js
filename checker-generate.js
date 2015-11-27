@@ -1,43 +1,56 @@
+'use strict';
+
 const http = require('http');
 const lbl = require('linebyline');
 const fs = require('fs');
 
+const inPath = 'testdata/checker_uas.txt';
 const outPath = 'testdata/livecomparisondata.json';
 
 function regenerateComparisonDataFile(success) {
-	var outstandingResults = 0;
+	let outstandingResults = 0;
 
 	const output = fs.openSync(outPath, 'w');
 	const results = {};
 
-	function onResult(ua, result) {
+	function onResponse() {
 		outstandingResults--;
-		console.log(`Brand: ${result.brand}, Model: ${result.model}, UA: ${ua}`);
 
-		results[ua] = result;
-
-		if (outstandingResults == 0) {
+		if (outstandingResults === 0) {
 			fs.writeSync(output, JSON.stringify(results));
 			fs.close(output, success);
 		}
 	}
 
-	function onError(e) {
-		console.log(`epic fail: ${e}`);
-		process.exit(1);
+	function onResult(ua, result) {
+		console.log(`Brand: ${result.brand}, Model: ${result.model}, UA: ${ua}`);
+		results[ua] = result;
+		onResponse();
 	}
 
-	var lineReader = lbl('testdata/checker_uas.txt');
+	function onError(e, ua) {
+		if (ua) {
+			console.log(`DeMI query error '${e}' for: ${ua}`);
+		} else {
+			console.log(`DeMI query error: ${e}`);
+		}
+		onResponse();
+	}
+
+	const lineReader = lbl(inPath);
 	lineReader.on('line', function(line) {
 		outstandingResults++;
 		getDemiResponseForUA(line, onResult, onError);
 	})
-	.on('error', onError);
+	.on('error', function(e) {
+		console.log(`Error reading input file: ${e}`);
+		process.exit(1);
+	});
 }
 
 function downloadFile(options, success, error) {
 	http.get(options).on('response', function(response) {
-		var body = '';
+		let body = '';
 		response.on('data', function(data) {
 			body += data;
 		})
@@ -51,18 +64,23 @@ function downloadFile(options, success, error) {
 }
 
 function getDemiResponseForUA(ua, success, error) {
-	ua = encodeURIComponent(ua);
-	var options = {
+	const encodedUA = encodeURI(ua);
+	const options = {
 		host: 'www-cache.reith.bbc.co.uk',
-		path: `http://open.test.bbc.co.uk/wurfldemi/useragent.json?ua=${ua}`
+		path: `http://open.test.bbc.co.uk/wurfldemi/useragent.json?ua=${encodedUA}`
 	};
 
 	downloadFile(options, function(data) {
-		var result = JSON.parse(data);
-		success(ua, {
-			brand: result.brand,
-			model: result.model
-		});
+		try {
+			const result = JSON.parse(data);
+			success(ua, {
+				brand: result.brand,
+				model: result.model
+			});
+		}
+		catch(e) {
+			error(e, ua);
+		}
 	}, error);
 }
 
