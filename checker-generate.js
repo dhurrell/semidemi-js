@@ -17,7 +17,7 @@ function regenerateComparisonDataFile(success) {
         outstandingResults--;
 
         if (outstandingResults === 0) {
-            fs.writeSync(output, JSON.stringify(results, null, '\t'));
+            fs.writeSync(output, JSON.stringify(results, null, 4));
             fs.close(output, success);
         }
     }
