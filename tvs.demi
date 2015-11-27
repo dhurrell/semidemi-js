@@ -726,7 +726,8 @@ tivo opera: [+Opera]/9.80 (Linux mips) Presto/2.12.407 Version/12.51 , TiVo-Devi
 # Toshiba
 ########
 
-toshiba bd_2013: Opera/9.80 (Linux armv6l; [+Opera TV] Store/5450; TOSHIBA; [+2013-BDX]; Mediatek) Presto/2.12.362 Version/12.10
+toshiba bd_2013: Opera/9.80 (Linux armv6l; Opera TV Store/5450; [+TOSHIBA]; [+2013-BDX]; Mediatek) Presto/2.12.362 Version/12.10
+toshiba bd_2013: Opera/9.80 (Linux armv6l; Opera TV Store/5450; [+TOSHIBA];E8E0B7E7685D;BDX2550KB; 1.11) Presto/2.12.362 Version/12.10
 toshiba bdp_2d_2014: Opera/9.80 (Linux armv6l; [+Opera TV] Store/5450; TOSHIBA; [+2014-BDX-2D]; Mediatek) Presto/2.12.362 Version/12.10
 toshiba bdp_3d_2014: Opera/9.80 (Linux armv6l; [+Opera TV] Store/5450; TOSHIBA; [+2014-BDX-3D]; Mediatek) Presto/2.12.362 Version/12.10
 toshiba bdx2250kb: [+TOSHIBA; BDX2250KB;] [+Mediatek]
@@ -741,6 +742,7 @@ toshiba tl968: Mozilla/5.0 (X11; U; Linux i686; en) AppleWebKit/534.1 (KHTML, li
 toshiba tl968: Mozilla/5.0 (X11; U; Linux i686; en) AppleWebKit/534.1 (KHTML, like Gecko) HbbTV/1.1.1 ( DL PVR RTSP;Mstar;OWB;;;) [+TOSHIBA-2012A-RL/TL/VL]
 toshiba tv_2013: Mozilla/5.0 (Linux; U; en-GB) AppleWebKit/534.1(KHTML, like Gecko) [+HbbTV]/1.1.1(;TOSHIBA;MWB;;;) [+TOSHIBA-2013]A-L4/L6/L7/L9
 toshiba tv_2014: Mozilla/5.0 (Linux; U; en-UK) AppleWebKit/537.4 (KHTML, like Gecko) [+HbbTV]/1.1.1 (;TOSHIBA;MWB;;;) [+TOSHIBA-DTV-2014A] (L6453; 8.1.21.0.1.1; 2014A; EU)
+toshiba toshiba_2011: Opera/9.80 (Linux armv7l; [+InettvBrowser/2.2] (00014A;SonyDTV140;0001;0001]) [vKDL32W705B]; CC/ESP) Presto/2.12.407 Version/12.50
 
 #########
 # Verismo
