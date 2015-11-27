@@ -23,10 +23,8 @@ function regenerateComparisonDataFile(success) {
     }
 
     function onResult(result) {
-        if (result.brand && result.model) {
-            console.log(`Brand: ${result.brand}, Model: ${result.model}, UA: ${result.ua}`);
-            results.push(result);
-        }
+        console.log(`Brand: ${result.brand}, Model: ${result.model}, UA: ${result.ua}`);
+        results.push(result);
         onResponse();
     }
 
@@ -70,8 +68,8 @@ function downloadFile(options, success, error) {
 function getDemiResponseForUA(ua, success, error) {
     const encodedUA = encodeURI(ua);
     const options = {
-        host: 'www-cache.reith.bbc.co.uk',
-        path: `http://open.test.bbc.co.uk/wurfldemi/useragent.json?ua=${encodedUA}`
+        host: 'open.test.bbc.co.uk',
+        path: `/wurfldemi/useragent.json?ua=${encodedUA}`
     };
 
     downloadFile(options, function(data) {

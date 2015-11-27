@@ -8,8 +8,16 @@ const parser = require('./src/parser');
 
 const matchers = parser(fs.readFileSync('./tvs.demi', 'utf8'));
 
-function normaliseDemiValue(v) {
-    return v.toLowerCase().replace(/[^a-z0-9]/g, '_');
+function normaliseBrandModel(brand, model) {
+    function normalise(s) {
+        return s.toLowerCase().replace(/[^a-z0-9]/g, '_');
+    }
+
+    if (brand && model) {
+        return normalise(brand) + '-' + normalise(model);
+    }
+
+    return undefined;
 }
 
 function semiDemi(ua) {
@@ -22,7 +30,7 @@ function semiDemi(ua) {
 }
 
 function testUserAgent(device, failures) {
-    const expected = normaliseDemiValue(device.brand) + '-' + normaliseDemiValue(device.model);
+    const expected = normaliseBrandModel(device.brand, device.model);
     const got = semiDemi(device.ua)
 
     if (expected === got) {
@@ -58,18 +66,17 @@ function runTests (json) {
     let count = 0;
 
     data.forEach(function(device) {
-        if (device.brand && device.model) {
-            count++;
-            testUserAgent(device, dodgyUAs);
-        }
+        count++;
+        testUserAgent(device, dodgyUAs);
     });
 
     console.log();
-
     printSummary(count, dodgyUAs.length);
 
     if (dodgyUAs.length) {
         printFailures(dodgyUAs);
+        printSummary(count, dodgyUAs.length);
+
         process.exit(1);
     }
 }
