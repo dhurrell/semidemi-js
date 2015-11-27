@@ -1,98 +1,84 @@
-var http = require('http');
-var fs = require('fs');
+'use strict';
+
+const inFile = 'testdata/livecomparisondata.json';
+
+const fs = require('fs');
 const bestmatcher = require('./src/bestmatch');
 const parser = require('./src/parser');
 
-console.log('SemiDemi Checker');
+const matchers = parser(fs.readFileSync('./tvs.demi', 'utf8'));
 
-function downloadFile (options, succ, err) {
-    http.get(options).on('response', function (response) {
-        var body = '';
-        response.on('data', function (chunk) {
-            body += chunk;
-        });
-        response.on('end', function () {
-            succ(body);
-        });
-    }).on('error', function(e) {
-        err(e.message);
-    });
-}
-
-
-var matchers = parser(fs.readFileSync('./tvs.demi', 'utf8'));
 function normaliseDemiValue(v) {
     return v.toLowerCase().replace(/[^a-z0-9]/g, '_');
 }
 
-function semidemi (ua) {
-    var result = bestmatcher(ua)(matchers);
-    if (!result) { return; }
-    return result[0].brand+'-'+result[0].model;
-}
-
-function parseDemi (response) {
-    var brandMatch = response.match(/<dt>brand<\/dt>\s*<dd><span class=\"string\">([^<]+)<\/span><\/dd>/);
-    var modelMatch = response.match(/<dt>model<\/dt>\s*<dd><span class=\"string\">([^<]+)<\/span><\/dd>/);
-    if (!brandMatch || !modelMatch) {
+function semiDemi(ua) {
+    const result = bestmatcher(ua)(matchers);
+    if (!result) {
         return;
     }
-    return normaliseDemiValue(brandMatch[1]) + '-' + normaliseDemiValue(modelMatch[1]);
+
+    return result[0].brand + '-' + result[0].model;
 }
 
-function demi (ua, succ, err) {
-    var options = {
-        host: 'www.test.bbc.co.uk',
-        path: '/frameworks/test/demi/php',
-        headers: {'user-agent': ua}
-    };
-    downloadFile(options, function (data) {
-        succ(parseDemi(data.toString()));
-    }, err);
+function testUserAgent(device, ua, failures) {
+    const expected = normaliseDemiValue(device.brand) + '-' + normaliseDemiValue(device.model);
+    const got = semiDemi(ua)
+
+    if (expected === got) {
+        process.stdout.write('.');
+    } else {
+        process.stdout.write('x');
+        failures.push({
+            ua: ua,
+            expected: expected,
+            got: got
+        });
+    }
 }
 
-function testUA (ua, idx, done) {
-    demi(ua, function (demi) {
-        if (semidemi(ua) === demi) {
-            process.stdout.write('✓');
-        } else {
-            process.stdout.write('x');
-            console.log('\n'+idx+': FAILED: ' + ua + '\nSemiDemi:  ' + semidemi(ua) + '\nDemi    : ' + demi);
-            process.exit();
-        }
-        done();
-    }, function (err) {
-        process.stdout.write('e');
-        console.log('\n'+idx+': ERROR: ' + ua + '\nDemi error: ' + err);
-        done();
+function printSummary(successCount, failureCount) {
+    console.log(`Checked ${successCount} UAs with ${failureCount} failures.`);
+}
+
+function printFailures(failures) {
+    console.log('Failures: ');
+
+    failures.forEach(function(dodgyUA) {
+        console.log();
+        console.log(`UA: ${dodgyUA.ua}`);
+        console.log(`\tExpected: ${dodgyUA.expected}`);
+        console.log(`\tGot: ${dodgyUA.got}`);
     });
 }
 
-function runTests (uas) {
-    var args = process.argv.slice(2);
+function runTests (json) {
+    const data = JSON.parse(json);
+    const dodgyUAs = [];
+    let count = 0;
 
-    var start = args[0] || 0;
-    var lines = uas.split(/[\r\n]+/);
-    console.log('Num UAs: ' + lines.length);
-    var end = args[1] || lines.length;
+    for (let comparisonUA in data) {
+        const device = data[comparisonUA];
 
-    var i = 0;
-    var doNextTest = function () {
-        var next = function () {
-            i++;
-            if (i < lines.length) {
-                doNextTest();
-            } else {
-                console.log('Finished');
-            }
-        };
-        if (i >= start && i <= end) {
-            testUA(lines[i], i, next);
-        } else {
-            next();
+        if (device.brand && device.model) {
+            count++;
+            testUserAgent(device, comparisonUA, dodgyUAs);
         }
-    };
-    doNextTest();
+    }
+
+    console.log();
+
+    printSummary(count, dodgyUAs.length);
+
+    if (dodgyUAs.length) {
+        printFailures(dodgyUAs);
+        process.exit(1);
+    }
 }
 
-runTests(fs.readFileSync('testdata/checker_uas.txt', 'utf8'));
+if (!fs.existsSync(inFile)) {
+    console.log('No input file. Run checker-generate.js first.');
+    process.exit(55);
+}
+
+runTests(fs.readFileSync(inFile, 'utf8'));
