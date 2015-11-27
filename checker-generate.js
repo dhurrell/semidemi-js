@@ -17,7 +17,7 @@ function regenerateComparisonDataFile(success) {
 		outstandingResults--;
 
 		if (outstandingResults === 0) {
-			fs.writeSync(output, JSON.stringify(results));
+			fs.writeSync(output, JSON.stringify(results, null, '\t'));
 			fs.close(output, success);
 		}
 	}
@@ -39,8 +39,10 @@ function regenerateComparisonDataFile(success) {
 
 	const lineReader = lbl(inPath);
 	lineReader.on('line', function(line) {
-		outstandingResults++;
-		getDemiResponseForUA(line, onResult, onError);
+		if (line) {
+			outstandingResults++;
+			getDemiResponseForUA(line, onResult, onError);
+		}
 	})
 	.on('error', function(e) {
 		console.log(`Error reading input file: ${e}`);
